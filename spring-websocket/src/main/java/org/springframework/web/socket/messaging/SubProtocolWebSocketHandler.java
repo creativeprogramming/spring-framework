@@ -74,7 +74,7 @@ public class SubProtocolWebSocketHandler
 	 * connection isn't doing well (proxy issue, slow network?) and can be closed.
 	 * @see #checkSessions()
 	 */
-	private static final int TIME_TO_FIRST_MESSAGE = 60 * 1000;
+	private static final int TIME_TO_FIRST_MESSAGE = 3 * 60 * 1000; //this pull request is to ask you to make this parameter configurable, thanks in advance
 
 
 	private final Log logger = LogFactory.getLog(SubProtocolWebSocketHandler.class);
